@@ -20,7 +20,7 @@ var rname= /^[a-zA-Z]+$/;
 }
 
     function validatephone(){
-var phone=/^[0-9]$/;
+var phone=/[0-9]+/;
     if(signup.number.value == ""){
         alert("Please Enter Your Phone Number");
         return false;
@@ -61,8 +61,8 @@ var remail= /^[a-zA-Z\d]+@[a-z]{3,9}.[a-z]{2,3}$/;
 
            <input type="text" name = "nname" placeholder = "Enter Your Name" onblur="return validatename();">
            <br>
-           <input type=text name="number" pattern="/^[0-9]{10}$/" placeholder = "Enter Phone Number"><br>
-           <input type="email" name="email" placeholder = "Enter Email ID" type="email"><br>
+           <input type=text name="number" onblur="return validatephone();" placeholder = "Enter Phone Number"><br>
+           <input type="email" name="email" placeholder = "Enter Email ID" onblur="return validateemail();"><br>
            <input type="password" name="pass" placeholder="Enter Password"><br>
            <input type="password" name="confpass" placeholder="Re-Enter Password" ><br>
            <div class="clearfix">
