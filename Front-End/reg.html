@@ -2,6 +2,7 @@
 <html>
     
     <head>
+        <link rel="stylesheet" href="edit.css"/>
         <title>registration Form</title>
         <script type="text/javascript">
         function validatename(){
@@ -52,83 +53,23 @@ var remail= /^[a-zA-Z\d]+@[a-z]{3,5}.[a-z]{2,3}$/;
         </script>
     </head>
     <body>
-       <form name="signup" action ="action.php" method="post" >
-           Enter Name: <input type="text" name = "nname" onblur="return validatename();">
-           <br>
-           Enter Phone Number:  <input type=text name="number" onblur="return validatephone();"><br>
-           Enter product model Number <input type="text" name="model" ><br>
-           Enter Email ID: <input type=text name="email" onblur="return validateemail();"><br>
-           Enter Password <input type="password" name="pass" ><br>
-           Re-Enter Password <input type="password" name="confpass" ><br>
-           <input type="submit" value="Submit"> 
-           </form> 
-       
-    </body>
-</html>
+        <h1>Sign Up </h1>
+          <hr stlye=>
+        <form name="signup" action ="action.php" method="post" >
+          
+           <div class="container">
 
-<!DOCTYPE html>
-<html>
-    
-    <head>
-        <title>registration Form</title>
-        <script type="text/javascript">
-        function validatename(){
-var rname= /^[a-zA-Z]+$/;
-    if(signup.nname.value == ""){
-        alert("Please Enter Your Name");
-        return false;
-    }
-    if(!rname.test(signup.nname.value)){
-        alert("Enter name in proper format");
-        return false;
-    }
-            return true;
-    
-}
-
-    function validatephone(){
-var phone=/[0-9]{10}/;
-    if(signup.number.value == ""){
-        alert("Please Enter Your Phone Number");
-        return false;
-    }
-    if(!phone.test(signup.number.value)){
-        alert("Enter phone number in 10 digits");
-        return false;
-    }
-    if(!phone.test(signup.number.value.length!=10)){
-        alert("Enter phone number in 10 digits");
-        return false;
-    }
-     
-            return true;
-    
-}
-            function validateemail(){
-var remail= /^[a-zA-Z\d]+@[a-z]{3,5}.[a-z]{2,3}$/;
-    if(signup.email.value == ""){
-        alert("Please Enter Your Email");
-        return false;
-    }
-    if(!remail.test(signup.email.value)){
-        alert("Enter email in proper format");
-        return false;
-    }
-            return true;
-    
-}
-        </script>
-    </head>
-    <body>
-       <form name="signup" action ="action.php" method="post" >
-           Enter Name: <input type="text" name = "nname" onblur="return validatename();">
+           <input type="text" name = "nname" placeholder = "Enter Your Name" onblur="return validatename();">
            <br>
-           Enter Phone Number:  <input type=text name="number" onblur="return validatephone();"><br>
-           Enter product model Number <input type="text" name="model" ><br>
-           Enter Email ID: <input type=text name="email" onblur="return validateemail();"><br>
-           Enter Password <input type="password" name="pass" ><br>
-           Re-Enter Password <input type="password" name="confpass" ><br>
-           <input type="submit" value="Submit"> 
+           <input type=text name="number" placeholder = "Enter Phone Number" onblur="return validatephone();"><br>
+           <input type="text" name="model" placeholder="Enter Model Number"><br>
+           <input type=text name="email" placeholder = "Enter Email ID" onblur="return validateemail();"><br>
+           <input type="password" name="pass" placeholder="Enter Password"><br>
+           <input type="password" name="confpass" placeholder="Re-Enter Password" ><br>
+           <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div></div>
            </form> 
        
     </body>
