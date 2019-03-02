@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>registration Form</title>
+        <script type="text/javascript">
+        function validatename(){
+var rname= /^[a-zA-Z]+$/;
+    if(signup.nname.value == ""){
+        alert("Please Enter Your Name");
+        return false;
+    }
+    if(!rname.test(signup.nname.value)){
+        alert("Enter name in proper format");
+        return false;
+    }
+            return true;
+    
+}
+
+    function validatephone(){
+var phone=/[0-9]{10}/;
+    if(signup.number.value == ""){
+        alert("Please Enter Your Phone Number");
+        return false;
+    }
+    if(!phone.test(signup.number.value)){
+        alert("Enter phone number in 10 digits");
+        return false;
+    }
+    if(!phone.test(signup.number.value.length!=10)){
+        alert("Enter phone number in 10 digits");
+        return false;
+    }
+     
+            return true;
+    
+}
+            function validateemail(){
+var remail= /^[a-zA-Z\d]+@[a-z]{3,5}.[a-z]{2,3}$/;
+    if(signup.email.value == ""){
+        alert("Please Enter Your Email");
+        return false;
+    }
+    if(!remail.test(signup.email.value)){
+        alert("Enter email in proper format");
+        return false;
+    }
+            return true;
+    
+}
+        </script>
+    </head>
+    <body>
+       <form name="signup" action ="action.php" method="post" >
+           Enter Name: <input type="text" name = "nname" onblur="return validatename();">
+           <br>
+           Enter Phone Number:  <input type=text name="number" onblur="return validatephone();"><br>
+           Enter product model Number <input type="text" name="model" ><br>
+           Enter Email ID: <input type=text name="email" onblur="return validateemail();"><br>
+           Enter Password <input type="password" name="pass" ><br>
+           Re-Enter Password <input type="password" name="confpass" ><br>
+           <input type="submit" value="Submit"> 
+           </form> 
+       
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>registration Form</title>
+        <script type="text/javascript">
+        function validatename(){
+var rname= /^[a-zA-Z]+$/;
+    if(signup.nname.value == ""){
+        alert("Please Enter Your Name");
+        return false;
+    }
+    if(!rname.test(signup.nname.value)){
+        alert("Enter name in proper format");
+        return false;
+    }
+            return true;
+    
+}
+
+    function validatephone(){
+var phone=/[0-9]{10}/;
+    if(signup.number.value == ""){
+        alert("Please Enter Your Phone Number");
+        return false;
+    }
+    if(!phone.test(signup.number.value)){
+        alert("Enter phone number in 10 digits");
+        return false;
+    }
+    if(!phone.test(signup.number.value.length!=10)){
+        alert("Enter phone number in 10 digits");
+        return false;
+    }
+     
+            return true;
+    
+}
+            function validateemail(){
+var remail= /^[a-zA-Z\d]+@[a-z]{3,5}.[a-z]{2,3}$/;
+    if(signup.email.value == ""){
+        alert("Please Enter Your Email");
+        return false;
+    }
+    if(!remail.test(signup.email.value)){
+        alert("Enter email in proper format");
+        return false;
+    }
+            return true;
+    
+}
+        </script>
+    </head>
+    <body>
+       <form name="signup" action ="action.php" method="post" >
+           Enter Name: <input type="text" name = "nname" onblur="return validatename();">
+           <br>
+           Enter Phone Number:  <input type=text name="number" onblur="return validatephone();"><br>
+           Enter product model Number <input type="text" name="model" ><br>
+           Enter Email ID: <input type=text name="email" onblur="return validateemail();"><br>
+           Enter Password <input type="password" name="pass" ><br>
+           Re-Enter Password <input type="password" name="confpass" ><br>
+           <input type="submit" value="Submit"> 
+           </form> 
+       
+    </body>
+</html>
+
