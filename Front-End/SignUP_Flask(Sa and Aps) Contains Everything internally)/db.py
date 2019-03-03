@@ -26,10 +26,10 @@ def login():
 	try:
 		cursor.execute(sql_query)
 		conn.close()
-		return "logged in"
+		return redirect("display_notif.html")
 		
 	except:
-
+    
 		conn.close()
 
 	for pno in cursor.fetchall():
