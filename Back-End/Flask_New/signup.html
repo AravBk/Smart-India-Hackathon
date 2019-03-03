@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <link rel="stylesheet" href="edit_signup.css"/>
+        <title>ALPHA-Q | SignUp</title>
+        <script type="text/javascript">
+        function validatename(){
+var rname= /^[a-zA-Z]+$/;
+    if(signup.nname.value == ""){
+        alert("Please Enter Your Name");
+        return false;
+    }
+    if(!rname.test(signup.nname.value)){
+        alert("Enter name in proper format");
+        return false;
+    }
+            return true;
+    
+}
+    function validatephone(){
+var phone=/[0-9]+/;
+    if(signup.number.value == ""){
+        alert("Please Enter Your Phone Number");
+        return false;
+    }
+    if(!phone.test(signup.number.value)){
+        alert("Enter phone number in 10 digits");
+        return false;
+    }
+    if(signup.number.value.length!=10){
+        alert("Enter phone number in 10 digits");
+        return false;
+    }
+     
+            return true;
+    
+}
+            function validateemail(){
+var remail= /^[a-zA-Z\d]+@[a-z]{3,9}.[a-z]{2,3}$/;
+    if(signup.email.value == ""){
+        alert("Please Enter Your Email");
+        return false;
+    }
+    if(!remail.test(signup.email.value)){
+        alert("Enter email in proper format");
+        return false;
+    }
+            return true;
+    
+}
+        </script>
+    </head>
+    <body>
+        <h1>Sign Up </h1>
+          <hr >
+        <form name="signup" action ="{{url_for('users_insert')}}">
+         
+           <div class="container">
+
+           <input type="text" name = "nname" placeholder = "Enter Your Name" onblur="return validatename();">
+           <br>
+           <input type=text name="number" onblur="return validatephone();" placeholder = "Enter Phone Number"><br>
+           <input type="email" name="email" placeholder = "Enter Email ID" onblur="return validateemail();"><br>
+           <input type="password" name="pass" placeholder="Enter Password"><br>
+           <input type="password" name="confpass" placeholder="Re-Enter Password" ><br>
+           <div class="clearfix">
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div></div>
+           </form> 
+       
+    </body>
+</html>
