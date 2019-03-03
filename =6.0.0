@@ -1,0 +1,14 @@
+Collecting twilio
+  Downloading https://files.pythonhosted.org/packages/0b/93/9f8f9848db165a2fc498bf2baccf636776836fedbdc58192ff1316bfa92a/twilio-6.25.0-py2.py3-none-any.whl (955kB)
+Requirement already satisfied: requests>=2.0.0; python_version >= "3.0" in /anaconda3/lib/python3.7/site-packages (from twilio) (2.21.0)
+Requirement already satisfied: pytz in /anaconda3/lib/python3.7/site-packages (from twilio) (2018.7)
+Collecting PyJWT>=1.4.2 (from twilio)
+  Downloading https://files.pythonhosted.org/packages/87/8b/6a9f14b5f781697e51259d81657e6048fd31a113229cf346880bb7545565/PyJWT-1.7.1-py2.py3-none-any.whl
+Requirement already satisfied: six in /anaconda3/lib/python3.7/site-packages (from twilio) (1.12.0)
+Requirement already satisfied: pysocks; python_version >= "3.0" in /anaconda3/lib/python3.7/site-packages (from twilio) (1.6.8)
+Requirement already satisfied: urllib3<1.25,>=1.21.1 in /anaconda3/lib/python3.7/site-packages (from requests>=2.0.0; python_version >= "3.0"->twilio) (1.24.1)
+Requirement already satisfied: idna<2.9,>=2.5 in /anaconda3/lib/python3.7/site-packages (from requests>=2.0.0; python_version >= "3.0"->twilio) (2.8)
+Requirement already satisfied: chardet<3.1.0,>=3.0.2 in /anaconda3/lib/python3.7/site-packages (from requests>=2.0.0; python_version >= "3.0"->twilio) (3.0.4)
+Requirement already satisfied: certifi>=2017.4.17 in /anaconda3/lib/python3.7/site-packages (from requests>=2.0.0; python_version >= "3.0"->twilio) (2018.11.29)
+Installing collected packages: PyJWT, twilio
+Successfully installed PyJWT-1.7.1 twilio-6.25.0
