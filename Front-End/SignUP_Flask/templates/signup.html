@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <style>
+html,body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(245, 233, 221, 0.81)
+    margin-top: 5%;
+    margin-left: 17%;
+    margin-bottom: 1%;
+
+}
+h1{
+    color: #384640;
+    margin-left: 21%;
+    margin-top: 15%;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+hr{
+    color: #384640;
+    margin-left: 9%;
+    width:36.5%;
+}
+* {box-sizing: border-box}
+
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=email] {
+  width: 40%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.signupbtn {
+  padding: 14px 20px;
+  background-color: #244C60;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+ .signupbtn {
+     float: left;
+  width: 25%;
+     
+    margin-left:7.4%;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+    align-content: center;
+    margin-left: 8%;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .signupbtn {
+     width: 100%;
+      margin-right: 5%; 
+  }
+}
+
+	</style>
+        <title>ALPHA-Q | SignUp</title>
+        <script type="text/javascript">
+        function validatename(){
+var rname= /^[a-zA-Z]+$/;
+    if(signup.nname.value == ""){
+        alert("Please Enter Your Name");
+        return false;
+    }
+    if(!rname.test(signup.nname.value)){
+        alert("Enter name in proper format");
+        return false;
+    }
+            return true;
+    
+}
+    function validatephone(){
+var phone=/[0-9]+/;
+    if(signup.number.value == ""){
+        alert("Please Enter Your Phone Number");
+        return false;
+    }
+    if(!phone.test(signup.number.value)){
+        alert("Enter phone number in 10 digits");
+        return false;
+    }
+    if(signup.number.value.length!=10){
+        alert("Enter phone number in 10 digits");
+        return false;
+    }
+     
+            return true;
+    
+}
+            function validateemail(){
+var remail= /^[a-zA-Z\d]+@[a-z]{3,9}.[a-z]{2,3}$/;
+    if(signup.email.value == ""){
+        alert("Please Enter Your Email");
+        return false;
+    }
+    if(!remail.test(signup.email.value)){
+        alert("Enter email in proper format");
+        return false;
+    }
+            return true;
+    
+}
+        </script>
+    </head>
+    <body>
+        <h1>Sign Up </h1>
+          <hr >
+        <form name="signup" action ="{{url_for('update_data')}}" method="POST">
+         
+           <div class="container">
+
+           <input type="text" name = "nname" placeholder = "Enter Your Name" >
+           <br>
+           <input type=text name="number" placeholder = "Enter Phone Number"><br>
+           <input type="email" name="email" placeholder = "Enter Email ID" "><br>
+           <input type="password" name="pass" placeholder="Enter Password"><br>
+           <input type="password" name="confpass" placeholder="Re-Enter Password" ><br>
+           <div class="clearfix">
+      <button type="submit" action="Login/login.html" class="signupbtn">Sign Up</button>
+    </div></div>
+           </form> 
+       
+    </body>
+</html>
