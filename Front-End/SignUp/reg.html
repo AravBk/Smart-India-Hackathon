@@ -55,7 +55,7 @@ var remail= /^[a-zA-Z\d]+@[a-z]{3,9}.[a-z]{2,3}$/;
     <body>
         <h1>Sign Up </h1>
           <hr >
-        <form name="signup" action ="action.php" method="post" >
+        <form name="signup" >
           
            <div class="container">
 
@@ -66,8 +66,11 @@ var remail= /^[a-zA-Z\d]+@[a-z]{3,9}.[a-z]{2,3}$/;
            <input type="password" name="pass" placeholder="Enter Password"><br>
            <input type="password" name="confpass" placeholder="Re-Enter Password" ><br>
            <div class="clearfix">
-      <button type="submit" class="signupbtn">Sign Up</button>
-    </div></div>
+      <button type="submit" class="signupbtn"><a href="../Display/display_notif.html">Sign Up</a></button>
+               
+               <button type="button" class="signupbtn1"><a href="../Login/login.html">Or Login</a></button> 
+    
+               </div></div>
            </form> 
        
     </body>

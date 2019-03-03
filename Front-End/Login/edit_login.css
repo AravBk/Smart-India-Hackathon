@@ -75,6 +75,11 @@ button:hover {
     margin-top: 2%;
     margin-left: 8%;
 }
+a{
+  color:azure;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-decoration: none;
+}
 
 /* Clear floats */
 .clearfix::after {

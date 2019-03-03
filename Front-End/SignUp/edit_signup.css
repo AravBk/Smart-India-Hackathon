@@ -34,7 +34,14 @@ input[type=text]:focus, input[type=password]:focus {
   background-color: #ddd;
   outline: none;
 }
-
+a{
+   color: azure;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-decoration: none;
+}
+.Login{
+    color: #4CAF50;
+}
 
 /* Set a style for all buttons */
 button {
@@ -57,6 +64,11 @@ button:hover {
   padding: 14px 20px;
   background-color: #244C60;
 }
+.signupbtn1 {
+  padding: 14px 20px;
+  background-color: #244C60;
+    margin-top: 10%;
+}
 
 /* Float cancel and signup buttons and add an equal width */
  .signupbtn {
@@ -64,6 +76,14 @@ button:hover {
   width: 25%;
      
     margin-left:7.4%;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    
+}
+ .signupbtn1 {
+     float: bottom;
+  width: 25%;
+    
+    margin-left:-25%;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     
 }
